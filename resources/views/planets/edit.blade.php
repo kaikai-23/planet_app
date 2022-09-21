@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <title>planet edit</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
+
 <body>
     <h1>惑星情報登録</h1>
 
-    @if($errors->any())
+    @if ($errors->any())
         <div class="error">
             <p>
                 <b>{{ count($errors) }}件のエラーがあります。</b>
@@ -21,7 +23,7 @@
                 @endforeach
             </ul>
         </div>
-    @endif    
+    @endif
 
     <form action="/planets/{{ $planet->id }}" method="post">
         @csrf
@@ -46,4 +48,5 @@
         <a href="/planets">戻る</a>
     </form>
 </body>
+
 </html>

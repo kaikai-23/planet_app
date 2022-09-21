@@ -154,11 +154,11 @@ return [
     */
 
     'attributes' => [
-        'jname'=>'名前',
-        'ename'=> '名前（英語）',
-        'radius'=>'半径',
-        'weight'=>'重量',
-    
+        'jname' => '名前',
+        'ename' => '名前（英語）',
+        'radius' => '半径',
+        'weight' => '重量',
+
     ],
 
 ];

@@ -11,7 +11,7 @@ class PlanetController extends Controller
     public function show($id)
     {
         $planet = Planet::find($id);
-        return view('planets.show', ['planet'=> $planet]);
+        return view('planets.show', ['planet' => $planet]);
     }
 
     public function edit($id)
@@ -36,7 +36,7 @@ class PlanetController extends Controller
     public function index()
     {
         $planets = Planet::all();
-        return view('planets.index', ['planets'=>$planets]);
+        return view('planets.index', ['planets' => $planets]);
     }
     public function create()
     {
